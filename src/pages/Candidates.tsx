@@ -21,7 +21,7 @@ const Candidates = () => {
       <div className="min-h-screen py-16 px-4">
         <div className="max-w-7xl mx-auto">
           <h1 className="text-4xl font-bold mb-8 text-center">
-            Confirmation Candidates 2024
+            Confirmation Candidates 2025
           </h1>
           <div className="grid gap-8 md:grid-cols-3 lg:grid-cols-4">
             {candidates.map((candidate) => (
