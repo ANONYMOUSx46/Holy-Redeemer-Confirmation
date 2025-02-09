@@ -75,7 +75,7 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
       </nav>
 
       {/* Main Content */}
-      <main className="pt-20">{children}</main> {/* Adjust padding to match navbar height */}
+      <main className="pt-30">{children}</main> {/* Adjust padding to match navbar height */}
     </div>
   );
 };
