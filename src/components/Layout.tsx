@@ -15,33 +15,32 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
 
   return (
     <div className="min-h-screen">
+      {/* Navbar */}
       <nav className="fixed w-full z-50 glass">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex items-center justify-between h-16">
+          <div className="flex items-center justify-between h-20"> {/* Increased height to h-20 */}
             {/* Logo Section */}
             <div className="flex items-center">
               <Link to="/" className="logo flex-shrink-0">
                 <img
                   src="/holy-redeemer.PNG" // Reference the image directly from the public folder
                   alt="Holy Redeemer Church Logo"
-                  className="h-16 w-auto object-contain" // Adjust size and ensure responsiveness
+                  className="h-16 w-auto object-contain" // Larger logo size
                 />
               </Link>
             </div>
 
             {/* Desktop Menu */}
-            <div className="hidden md:block">
-              <div className="ml-10 flex items-baseline space-x-4">
-                {menuItems.map((item) => (
-                  <Link
-                    key={item.name}
-                    to={item.path}
-                    className="px-3 py-2 rounded-md text-sm font-medium hover:text-primary transition-colors"
-                  >
-                    {item.name}
-                  </Link>
-                ))}
-              </div>
+            <div className="hidden md:flex items-center space-x-4">
+              {menuItems.map((item) => (
+                <Link
+                  key={item.name}
+                  to={item.path}
+                  className="px-4 py-3 rounded-md text-sm font-medium hover:text-primary transition-colors"
+                >
+                  {item.name}
+                </Link>
+              ))}
             </div>
 
             {/* Mobile Menu Button */}
@@ -64,7 +63,7 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
                 <Link
                   key={item.name}
                   to={item.path}
-                  className="block px-3 py-2 rounded-md text-base font-medium hover:text-primary transition-colors"
+                  className="block px-4 py-3 rounded-md text-base font-medium hover:text-primary transition-colors"
                   onClick={() => setIsMenuOpen(false)}
                 >
                   {item.name}
@@ -74,7 +73,9 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
           </div>
         )}
       </nav>
-      <main className="pt-16">{children}</main>
+
+      {/* Main Content */}
+      <main className="pt-20">{children}</main> {/* Adjust padding to match navbar height */}
     </div>
   );
 };
