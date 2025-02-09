@@ -81,10 +81,10 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
             <img
               src="/holy-redeemer.PNG" // Reference the image directly from the public folder
               alt="Holy Redeemer Church Logo"
-              className="h-16 w-auto object-contain mr-4 glass p-2 rounded-lg" // Added glass effect
+              className="h-18 w-auto object-contain mr-4 glass p-2 rounded-lg" // Added glass effect
             />
             <p className="text-sm text-gray-400">
-              &copy; {new Date().getFullYear()} Holy Redeemer Catholic Church. Develo[ed by Liam De Wet. All rights reserved.
+              &copy; {new Date().getFullYear()} Holy Redeemer Catholic Church. Developed by Liam De Wet. All rights reserved.
             </p>
           </div>
 
@@ -107,13 +107,13 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
               Catholic Resources
             </a>
             <a
-              href="https://www.holyredeemer.co.za/contact" // Replace with your contact page
+              href="https://www.holyredeemer.co.za" // Replace with your contact page
               className="hover:text-primary transition-colors"
             >
-              Contact Us
+              Church Website
             </a>
               <a
-              href="https://journey-through-sainthood.netlify.app/contact" // Replace with your contact page
+              href="https://journey-through-sainthood.netlify.app" // Replace with your contact page
               className="hover:text-primary transition-colors"
             >
               My Saints Website
