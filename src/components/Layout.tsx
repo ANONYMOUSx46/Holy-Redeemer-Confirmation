@@ -25,7 +25,7 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
                 <img
                   src="/holy-redeemer.PNG" // Reference the image directly from the public folder
                   alt="Holy Redeemer Church Logo"
-                  className="h-17 w-auto object-contain" // Larger logo size
+                  className="h-16 w-auto object-contain" // Larger logo size
                 />
               </Link>
             </div>
