@@ -21,8 +21,8 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between h-16">
             <div className="flex items-center">
-              <Link to="/" className="text-xl font-semibold">
-                Holy Redeemer Catholic Church
+              <Link to="/" className="logo">
+                 <img src="/holy-redeemer.PNG" alt="logo-of church" />
               </Link>
             </div>
             
