@@ -1,7 +1,6 @@
 import { Link } from "react-router-dom";
 import { Menu, X } from "lucide-react";
 import { useState } from "react";
-import logo from "../holy-redeemer.PNG"; // Import the logo
 
 const Layout = ({ children }: { children: React.ReactNode }) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -23,7 +22,7 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
             <div className="flex items-center">
               <Link to="/" className="logo flex-shrink-0">
                 <img
-                  src={logo} // Use the imported logo
+                  src="/holy-redeemer.PNG" // Reference the image directly from the public folder
                   alt="Holy Redeemer Church Logo"
                   className="h-12 w-auto object-contain" // Adjust size and ensure responsiveness
                 />
