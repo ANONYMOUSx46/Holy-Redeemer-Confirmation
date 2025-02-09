@@ -132,7 +132,7 @@ const Index = () => {
             </div>
             <div className="glass p-8 rounded-2xl">
               <img
-                src="https://images.unsplash.com/photo-1501854140801-50d01698950b?auto=format&fit=crop&q=80"
+                src="/church.jpg"
                 alt="Faith Journey"
                 className="rounded-lg w-full h-64 object-cover mb-6"
               />
