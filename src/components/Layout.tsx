@@ -1,11 +1,10 @@
-
 import { Link } from "react-router-dom";
 import { Menu, X } from "lucide-react";
 import { useState } from "react";
+import logo from "../holy-redeemer.PNG"; // Import the logo
 
 const Layout = ({ children }: { children: React.ReactNode }) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-
   const menuItems = [
     { name: "Home", path: "/" },
     { name: "About Confirmation", path: "/about" },
@@ -20,12 +19,18 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
       <nav className="fixed w-full z-50 glass">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between h-16">
+            {/* Logo Section */}
             <div className="flex items-center">
-              <Link to="/" className="logo">
-                 <img src="/holy-redeemer.PNG" alt="logo-of church" />
+              <Link to="/" className="logo flex-shrink-0">
+                <img
+                  src={logo} // Use the imported logo
+                  alt="Holy Redeemer Church Logo"
+                  className="h-12 w-auto object-contain" // Adjust size and ensure responsiveness
+                />
               </Link>
             </div>
-            
+
+            {/* Desktop Menu */}
             <div className="hidden md:block">
               <div className="ml-10 flex items-baseline space-x-4">
                 {menuItems.map((item) => (
@@ -40,6 +45,7 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
               </div>
             </div>
 
+            {/* Mobile Menu Button */}
             <div className="md:hidden">
               <button
                 onClick={() => setIsMenuOpen(!isMenuOpen)}
@@ -51,6 +57,7 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
           </div>
         </div>
 
+        {/* Mobile Menu */}
         {isMenuOpen && (
           <div className="md:hidden glass">
             <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
@@ -68,7 +75,6 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
           </div>
         )}
       </nav>
-
       <main className="pt-16">{children}</main>
     </div>
   );
