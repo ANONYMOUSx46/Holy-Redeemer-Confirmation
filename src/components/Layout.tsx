@@ -84,8 +84,7 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
               className="h-18 w-auto object-contain mr-4 glass p-2 rounded-lg" // Added glass effect
             />
             <p className="text-sm text-gray-400">
-              &copy; {new Date().getFullYear()} Holy Redeemer Catholic Church.
-              <br>Developed by Liam De Wet. All rights reserved.</br>
+              &copy; {new Date().getFullYear()} Holy Redeemer Catholic Church. Developed by Liam De Wet. All rights reserved.
             </p>
           </div>
 
