@@ -10,7 +10,7 @@ const events = [
     time: "18:00 - 19:30",
   },
   {
-    date: "March 22, 2024",
+    date: "March 22, 2025",
     title: "Saint Selection Workshop(placeholder for maybe an upcoming event)",
     description: "Learn about saints and choose your confirmation saint",
     time: "14:00 - 15:30",
