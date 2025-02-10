@@ -85,8 +85,7 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
             />
             <p className="text-sm text-gray-400">
               &copy; {new Date().getFullYear()} Holy Redeemer Catholic Church.
-              <br>
-                Developed by Liam De Wet. All rights reserved.
+              <br>Developed by Liam De Wet. All rights reserved.</br>
             </p>
           </div>
 
