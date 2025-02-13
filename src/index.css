@@ -89,4 +89,17 @@
       transform: translateX(0);
     }
   }
+
+  /* Footer-specific utility classes */
+  .footer-logo {
+    @apply h-16 w-auto object-contain rounded-lg glass p-2 transition-transform duration-300 hover:scale-105;
+  }
+
+  .footer-text {
+    @apply text-sm text-gray-400 text-center md:text-left;
+  }
+
+  .footer-link {
+    @apply text-gray-400 hover:text-primary transition-colors duration-300;
+  }
 }
