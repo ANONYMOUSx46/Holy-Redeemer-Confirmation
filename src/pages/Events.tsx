@@ -4,17 +4,11 @@ import { Calendar } from "lucide-react";
 
 const events = [
   {
-    date: "13 February 2025",
+    date: "20 February 2025",
     title: "Confirmation Class",
-    description: "Introduction to the Sacrament of Confirmation(placeholder topic)",
+    description: "What makes you happy?",
     time: "18:00 - 19:30",
-  },
-  {
-    date: "March 22, 2025",
-    title: "Saint Selection Workshop(placeholder for maybe an upcoming event)",
-    description: "Learn about saints and choose your confirmation saint",
-    time: "14:00 - 15:30",
-  },
+  }
   // Add more events here
 ];
 
