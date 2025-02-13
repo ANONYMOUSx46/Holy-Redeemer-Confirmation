@@ -74,28 +74,28 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
       <main className="flex-grow pt-16">{children}</main>
 
       {/* Footer */}
-      <footer className="bg-gray-900 text-white py-4">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-wrap justify-between items-center">
+      <footer className="bg-gray-900 text-white py-8">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row justify-between items-center gap-6">
           {/* Logo and Copyright */}
-          <div className="flex items-center mb-4 md:mb-0">
+          <div className="flex flex-col items-center md:flex-row gap-4 w-full md:w-auto">
             <img
               src="/holy-redeemer.PNG"
               alt="Holy Redeemer Church Logo"
-              className="h-18 w-auto object-contain mr-4 glass p-2 rounded-lg"
+              className="footer-logo"
             />
-            <p className="text-sm text-gray-400">
+            <p className="footer-text">
               &copy; {new Date().getFullYear()} Holy Redeemer Catholic Church.
               Developed by Liam De Wet. All rights reserved.
             </p>
           </div>
 
           {/* Footer Links */}
-          <div className="flex flex-wrap gap-4">
+          <div className="flex flex-col md:flex-row gap-4 w-full md:w-auto justify-center md:justify-end">
             <a
               href="https://www.vatican.va"
               target="_blank"
               rel="noopener noreferrer"
-              className="hover:text-primary transition-colors"
+              className="footer-link"
             >
               Vatican Website
             </a>
@@ -103,19 +103,19 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
               href="https://www.catholic.org"
               target="_blank"
               rel="noopener noreferrer"
-              className="hover:text-primary transition-colors"
+              className="footer-link"
             >
               Catholic Resources
             </a>
             <a
               href="https://www.holyredeemer.co.za"
-              className="hover:text-primary transition-colors"
+              className="footer-link"
             >
               Church Website
             </a>
             <a
               href="https://journey-through-sainthood.netlify.app"
-              className="hover:text-primary transition-colors"
+              className="footer-link"
             >
               My Saints Website
             </a>
