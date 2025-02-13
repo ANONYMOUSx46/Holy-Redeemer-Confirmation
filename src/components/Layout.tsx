@@ -15,9 +15,11 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
 
   return (
     <div className="min-h-screen">
+      {/* Navbar */}
       <nav className="fixed w-full z-50 glass">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex items-center justify-between h-16">
+          <div className="flex items-center justify-between h-16 flex-wrap">
+            {/* Logo */}
             <div className="flex items-center">
               <Link to="/" className="text-xl font-semibold">
                 Holy Redeemer Catholic Church
@@ -25,18 +27,16 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
             </div>
 
             {/* Desktop Menu */}
-            <div className="hidden md:block">
-              <div className="ml-10 flex items-baseline space-x-4">
-                {menuItems.map((item) => (
-                  <Link
-                    key={item.name}
-                    to={item.path}
-                    className="px-3 py-2 rounded-md text-sm font-medium hover:text-primary transition-colors"
-                  >
-                    {item.name}
-                  </Link>
-                ))}
-              </div>
+            <div className="hidden md:flex items-baseline space-x-4">
+              {menuItems.map((item) => (
+                <Link
+                  key={item.name}
+                  to={item.path}
+                  className="px-3 py-2 rounded-md text-sm font-medium hover:text-primary transition-colors"
+                >
+                  {item.name}
+                </Link>
+              ))}
             </div>
 
             {/* Mobile Menu Button */}
@@ -53,7 +53,7 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
 
         {/* Mobile Menu */}
         {isMenuOpen && (
-          <div className="md:hidden glass">
+          <div className="md:hidden glass max-h-[50vh] overflow-y-auto">
             <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
               {menuItems.map((item) => (
                 <Link
@@ -73,25 +73,26 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
       {/* Main Content */}
       <main className="flex-grow pt-16">{children}</main>
 
-      {/* Footer Section */}
-      <footer className="bg-gray-900 text-white py-8">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row justify-between items-center">
+      {/* Footer */}
+      <footer className="bg-gray-900 text-white py-4">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-wrap justify-between items-center">
           {/* Logo and Copyright */}
           <div className="flex items-center mb-4 md:mb-0">
             <img
-              src="/holy-redeemer.PNG" // Reference the image directly from the public folder
+              src="/holy-redeemer.PNG"
               alt="Holy Redeemer Church Logo"
-              className="h-18 w-auto object-contain mr-4 glass p-2 rounded-lg" // Added glass effect
+              className="h-18 w-auto object-contain mr-4 glass p-2 rounded-lg"
             />
             <p className="text-sm text-gray-400">
-              &copy; {new Date().getFullYear()} Holy Redeemer Catholic Church. Developed by Liam De Wet. All rights reserved.
+              &copy; {new Date().getFullYear()} Holy Redeemer Catholic Church.
+              Developed by Liam De Wet. All rights reserved.
             </p>
           </div>
 
           {/* Footer Links */}
-          <div className="flex flex-col md:flex-row gap-4">
+          <div className="flex flex-wrap gap-4">
             <a
-              href="https://www.vatican.va" // Example external link
+              href="https://www.vatican.va"
               target="_blank"
               rel="noopener noreferrer"
               className="hover:text-primary transition-colors"
@@ -99,7 +100,7 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
               Vatican Website
             </a>
             <a
-              href="https://www.catholic.org" // Example external link
+              href="https://www.catholic.org"
               target="_blank"
               rel="noopener noreferrer"
               className="hover:text-primary transition-colors"
@@ -107,13 +108,13 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
               Catholic Resources
             </a>
             <a
-              href="https://www.holyredeemer.co.za" // Replace with your contact page
+              href="https://www.holyredeemer.co.za"
               className="hover:text-primary transition-colors"
             >
               Church Website
             </a>
-              <a
-              href="https://journey-through-sainthood.netlify.app" // Replace with your contact page
+            <a
+              href="https://journey-through-sainthood.netlify.app"
               className="hover:text-primary transition-colors"
             >
               My Saints Website
