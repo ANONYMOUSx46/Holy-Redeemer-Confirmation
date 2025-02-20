@@ -59,7 +59,7 @@ const questions: Question[] = [
       "Over 300,000"
     ],
     correctAnswer: 2,
-    explanation: " The infographic provides the exact number of over 415,000 priests worldwide.
+    explanation: " The infographic provides the exact number of over 415,000 priests worldwide."
   },
   {
      id: 5,
