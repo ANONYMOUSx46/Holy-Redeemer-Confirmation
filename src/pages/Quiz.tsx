@@ -22,7 +22,7 @@ const questions: Question[] = [
       "20%",
       "25%"
     ],
-    correctAnswer: 2,
+    correctAnswer: 3,
     explanation: " The infographic clearly states that there are over 1.2 billion Catholics worldwide, which constitutes 17.7% of the global population."
   },
   {
@@ -34,7 +34,7 @@ const questions: Question[] = [
       " 22,000",
       " 25,000"
     ],
-    correctAnswer: 3,
+    correctAnswer: 2,
     explanation: " The infographic lists 22,000 hospitals and clinics operated by the Catholic Church."
   },
   {
@@ -58,7 +58,7 @@ const questions: Question[] = [
       "Over 500,000",
       "Over 300,000"
     ],
-    correctAnswer: 2,
+    correctAnswer: 3,
     explanation: " The infographic provides the exact number of over 415,000 priests worldwide."
   },
   {
