@@ -22,7 +22,7 @@ const questions: Question[] = [
       "20%",
       "25%"
     ],
-    correctAnswer: 3,
+    correctAnswer: 1,
     explanation: " The infographic clearly states that there are over 1.2 billion Catholics worldwide, which constitutes 17.7% of the global population."
   },
   {
