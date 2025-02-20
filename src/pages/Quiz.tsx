@@ -15,63 +15,84 @@ interface Question {
 const questions: Question[] = [
   {
     id: 1,
-    question: "What is the sacrament of Confirmation?",
+    question: "What percentage of the world's population is Catholic?",
     options: [
-      "A graduation ceremony from church",
-      "A completion of baptismal grace",
-      "Just a traditional ceremony",
-      "A social gathering at church"
+      "15%",
+      "17.7%",
+      "20%",
+      "25%"
     ],
-    correctAnswer: 1,
-    explanation: "Confirmation completes baptismal grace, strengthening our bond with the Church and gifting us with special strength from the Holy Spirit."
+    correctAnswer: 2,
+    explanation: " The infographic clearly states that there are over 1.2 billion Catholics worldwide, which constitutes 17.7% of the global population."
   },
   {
     id: 2,
-    question: "What happens during Confirmation?",
+    question: "How many hospitals and clinics does the Catholic Church operate worldwide?",
     options: [
-      "We receive money and gifts",
-      "We receive the Holy Spirit and are strengthened in our faith",
-      "We become church employees",
-      "We finish our religious education"
+      "10,000",
+      "15,000",
+      " 22,000",
+      " 25,000"
     ],
-    correctAnswer: 1,
-    explanation: "During Confirmation, the Holy Spirit descends upon us, strengthening our faith and completing our initiation into the Catholic Church."
+    correctAnswer: 3,
+    explanation: " The infographic lists 22,000 hospitals and clinics operated by the Catholic Church."
   },
   {
     id: 3,
-    question: "Why do we choose a Confirmation saint?",
+    question: " What is the Catholic belief regarding the Eucharist?",
     options: [
-      "To get a new name",
-      "Because it's traditional",
-      "To have a spiritual role model and intercessor",
-      "To make the ceremony longer"
+      "The bread and wine are symbols of Jesus' body and blood.",
+      " The bread and wine become the body and blood of Jesus.",
+      "Only priests can receive communion.",
+      "All denominations believe in the same way."
     ],
     correctAnswer: 2,
-    explanation: "We choose a saint as a spiritual role model and intercessor who will guide us in our faith journey and pray for us."
+    explanation: "The infographic specifies that the Catholic Church is the only church that holds this belief in transubstantiation."
   },
   {
     id: 4,
-    question: "What is the role of a Confirmation sponsor?",
+    question: "How many priests are there in the world according to the infographic?",
     options: [
-      "To pay for the celebration",
-      "To be a spiritual mentor and witness to your faith journey",
-      "To take photos during the ceremony",
-      "To organize the party afterward"
+      "Over 400,000",
+      "Over 415,000",
+      "Over 500,000",
+      "Over 300,000"
     ],
-    correctAnswer: 1,
-    explanation: "A sponsor serves as a spiritual mentor, supporting you in your faith journey and witnessing your commitment to the Catholic faith."
+    correctAnswer: 2,
+    explanation: " The infographic provides the exact number of over 415,000 priests worldwide.
   },
   {
-    id: 5,
-    question: "What are the gifts of the Holy Spirit?",
+     id: 5,
+    question: "Besides the Roman Catholic Church, how many Eastern Rites are in communion with Rome?",
+    options: ["Over 10", "Over 15", "Over 20", "Over 25"],
+    correctAnswer: 3,
+    explanation: "The infographic mentions over 20 Eastern Rites in communion with Rome."
+  },
+   {
+    id: 6,
+    question: "During the Middle Ages, what role did the Catholic Church play in preserving classical learning?",
     options: [
-      "Money, fame, and success",
-      "Wisdom, understanding, counsel, fortitude, knowledge, piety, and fear of the Lord",
-      "Sports, music, and art talents",
-      "Good grades and popularity"
+      "It had no significant role in preserving knowledge.",
+      "It preserved classical learning through monasteries.",
+      "It only preserved religious texts.",
+      "It contributed to the destruction of classical learning."
     ],
-    correctAnswer: 1,
-    explanation: "The seven gifts of the Holy Spirit help us live as faithful Christians and make good decisions in our daily lives."
+    correctAnswer: 2,
+    explanation: "The infographic highlights the Church's role in preserving philosophy, literature, and more through monasteries."
+  },
+   {
+    id: 7,
+    question: "How many saints are recognized by the Catholic Church?",
+    options: ["Over 5,000", "Over 7,000", "Over 10,000", "Over 15,000"],
+    correctAnswer: 3,
+    explanation: "The infographic states that there are over 10,000 saints recognized by the Catholic Church."
+  },
+  {
+    id: 8,
+    question: "Who proposed the Big Bang theory?",
+    options: ["Isaac Newton", "Albert Einstein", "Father Georges Lemaître", "Stephen Hawking"],
+    correctAnswer: 3,
+    explanation: "The infographic credits the Big Bang theory to a Catholic priest, Father Georges Lemaître."
   }
 ];
 
@@ -119,7 +140,7 @@ const Quiz = () => {
           {!quizCompleted ? (
             <div className="glass p-8 rounded-2xl space-y-6 animate-fade-in">
               <h1 className="text-3xl font-bold text-center mb-8 gradient-text">
-                Confirmation Quiz
+                Confirmation Quiz Based On Given Inforgraphic
               </h1>
               
               <div className="text-center mb-4">
