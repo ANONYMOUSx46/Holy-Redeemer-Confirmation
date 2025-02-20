@@ -46,7 +46,7 @@ const questions: Question[] = [
       "Only priests can receive communion.",
       "All denominations believe in the same way."
     ],
-    correctAnswer: 2,
+    correctAnswer: 1,
     explanation: "The infographic specifies that the Catholic Church is the only church that holds this belief in transubstantiation."
   },
   {
@@ -58,14 +58,14 @@ const questions: Question[] = [
       "Over 500,000",
       "Over 300,000"
     ],
-    correctAnswer: 3,
+    correctAnswer: 1,
     explanation: " The infographic provides the exact number of over 415,000 priests worldwide."
   },
   {
      id: 5,
     question: "Besides the Roman Catholic Church, how many Eastern Rites are in communion with Rome?",
     options: ["Over 10", "Over 15", "Over 20", "Over 25"],
-    correctAnswer: 3,
+    correctAnswer: 2,
     explanation: "The infographic mentions over 20 Eastern Rites in communion with Rome."
   },
    {
@@ -77,21 +77,21 @@ const questions: Question[] = [
       "It only preserved religious texts.",
       "It contributed to the destruction of classical learning."
     ],
-    correctAnswer: 2,
+    correctAnswer: 1,
     explanation: "The infographic highlights the Church's role in preserving philosophy, literature, and more through monasteries."
   },
    {
     id: 7,
     question: "How many saints are recognized by the Catholic Church?",
     options: ["Over 5,000", "Over 7,000", "Over 10,000", "Over 15,000"],
-    correctAnswer: 3,
+    correctAnswer: 2,
     explanation: "The infographic states that there are over 10,000 saints recognized by the Catholic Church."
   },
   {
     id: 8,
     question: "Who proposed the Big Bang theory?",
     options: ["Isaac Newton", "Albert Einstein", "Father Georges Lemaître", "Stephen Hawking"],
-    correctAnswer: 3,
+    correctAnswer: 2,
     explanation: "The infographic credits the Big Bang theory to a Catholic priest, Father Georges Lemaître."
   }
 ];
