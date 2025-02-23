@@ -36,7 +36,7 @@ const ministries = [
 ];
 
 const Ministries = () => {
-  const pdfUrl = "/public/PARISH-PORTFOLIO-SORTED-OCT-2024.pdf"; // Replace with the path to your PDF file
+  const pdfUrl = "/public/src/pages/PARISH-PORTFOLIO-SORTED-OCT-2024.pdf"; // Replace with the path to your PDF file
 
   return (
     <Layout>
