@@ -12,7 +12,7 @@ const events = [
   {    date: "5 March 2025",
     title: "Ash Wednesday Mass",
     description: "Celebration of Ash Wednesday, Mass times.",
-    time: "8:30am" "5:00pm" "7:30pm",
+    time: "8:30am - 5:00pm - 7:30pm",
   },
   {    date: "2 March 2025",
     title: "Ministry Morning",
