@@ -4,9 +4,9 @@ import { Calendar } from "lucide-react";
 
 const events = [
   {
-    date: "20 February 2025",
+    date: "27 February 2025",
     title: "Confirmation Class",
-    description: "What makes you happy?",
+    description: "Attend Classes",
     time: "18:00 - 19:30",
   },
   {    date: "5 March 2025",
