@@ -10,10 +10,8 @@ const Index = () => {
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-
     // Create a FormData object from the form
     const formData = new FormData(e.target as HTMLFormElement);
-
     try {
       // Submit the form data to Netlify
       const response = await fetch("/", {
@@ -21,7 +19,6 @@ const Index = () => {
         headers: { "Content-Type": "application/x-www-form-urlencoded" },
         body: new URLSearchParams(formData as any).toString(),
       });
-
       if (response.ok) {
         toast.success("Comment submitted successfully!");
         setComment(""); // Clear the textarea
@@ -80,7 +77,6 @@ const Index = () => {
               Start Quiz
             </button>
           </div>
-
           {/* Music Section */}
           <div className="glass p-8 rounded-2xl hover-card">
             <Music className="text-primary mb-4" size={32} />
@@ -93,7 +89,6 @@ const Index = () => {
               Listen Now
             </button>
           </div>
-
           {/* Events Section */}
           <div className="glass p-8 rounded-2xl hover-card">
             <Calendar className="text-primary mb-4" size={32} />
@@ -101,9 +96,21 @@ const Index = () => {
             <p className="mb-6 text-gray-600">Stay updated with confirmation classes and church events</p>
             <button
               onClick={() => navigate('/events')}
-              className="bg-primary text-white w-full px-4 py-2 rounded-lg hover:bg-primary/90 transition-colors"
+              className="bg-primary text-white w-full px-4 py-2 rounded-lg hover:bg-primary/90 transition-colors mb-4"
             >
               View Calendar
+            </button>
+            {/* Pope Francis Report as an Event */}
+            <button
+              onClick={() =>
+                window.open(
+                  "https://theconversation.com/francis-a-pope-who-has-cared-deeply-for-the-poor-and-opened-up-the-catholic-church-164362",
+                  "_blank"
+                )
+              }
+              className="bg-white/10 hover:bg-white/20 text-white w-full px-4 py-2 rounded-lg transition-colors"
+            >
+              Read About Pope Francis
             </button>
           </div>
         </div>
@@ -156,7 +163,6 @@ const Index = () => {
           >
             {/* Hidden Input for Netlify */}
             <input type="hidden" name="form-name" value="comments" />
-
             <textarea
               value={comment}
               onChange={(e) => setComment(e.target.value)}
