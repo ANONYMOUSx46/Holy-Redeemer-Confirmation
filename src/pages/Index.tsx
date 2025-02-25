@@ -108,7 +108,7 @@ const Index = () => {
                   "_blank"
                 )
               }
-              className="bg-primary/20 hover:bg-primary/30 text-white w-full px-4 py-2 rounded-lg transition-colors"
+              className="bg-primary text-white w-full px-4 py-2 rounded-lg hover:bg-primary/90 transition-colors"
             >
               Read About Pope Francis
             </button>
