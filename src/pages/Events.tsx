@@ -4,30 +4,10 @@ import { Calendar } from "lucide-react";
 
 const events = [
   {
-    date: "27 February 2025",
+    date: "13 March 2025",
     title: "Confirmation Class",
-    description: "Attend Classes",
+    description: " Please Attend Classes",
     time: "18:00 - 19:30",
-  },
-  {    date: "5 March 2025",
-    title: "Ash Wednesday Mass",
-    description: "Celebration of Ash Wednesday, Mass times.",
-    time: "8:30am - 5:00pm - 7:30pm",
-  },
-  {    date: "2 March 2025",
-    title: "Ministry Morning",
-    description: "Holy Redeemer presents a day to explore the many ministries they have, ask questions and discover where God may be calling you!",
-    time: "9:30am",
-  },
-   {    date: "4 March 2025",
-    title: "Praise and Worship, Donations of pancakes for Shrove Tuesday",
-    description: "Join parishioners in Worship and Adoration as we prepare our hearts for the season of LENT. Spend and evening",
-    time: "19:00pm",
-  },
-     {    date: "1 March 2025",
-    title: "Alter Server Training",
-    description: "Alter servers come together and practise",
-    time: "12:30 - 2:00pm ",
   }
   // Add more events here
 ];
